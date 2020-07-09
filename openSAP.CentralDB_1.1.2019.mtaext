@@ -1,0 +1,14 @@
+_schema-version: "3.1" 
+ID: openSAP.CentralDB.config1 
+extends: openSAP.CentralDB
+
+resources:
+ - name: opensap-central-container
+   parameters:
+      service-plan: hdi-shared
+      service: hanatrial
+      config:
+         schema: OPENSAP_CENTRAL_DB_<YOUR_SCP_ID>
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
