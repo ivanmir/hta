@@ -6,7 +6,7 @@ resources:
  - name: opensap-central-container
    parameters:
       service-plan: hdi-shared
-      service: hanatrial
+      service: hana
       config:
          schema: OPENSAP_CENTRAL_DB_<YOUR_SCP_ID>
    properties:
