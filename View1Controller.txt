@@ -1,0 +1,18 @@
+sap.ui.define([
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/model/resource/ResourceModel"
+], function (Controller, ResourceModel) {
+	"use strict";
+
+	return Controller.extend("com.sap.hta.web.controller.View1", {
+		onInit: function () {
+// set i18n model on view
+var i18nModel = new ResourceModel({
+	bundleName: "sap.ui.demo.walkthrough.i18n.i18n",
+	supportedLocales: [""],
+	fallbackLocale: ""
+});
+this.getView().setModel(i18nModel, "i18n");
+		}
+	});
+});
